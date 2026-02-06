@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages_name_array">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="language_codes_array">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+
+    <string-array name="themes_name_array">
+        <item>Системная</item>
+        <item>Темная</item>
+        <item>Светлая</item>
+    </string-array>
+
+    <string-array name="themes_codes_array">
+        <item>system</item>
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+</resources>

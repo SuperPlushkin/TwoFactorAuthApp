@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+
+    android:background="@color/background_primary_hard">
+
+    <TextView
+        android:id="@+id/tvServiceName"
+        style="@style/MyTheme.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/qrImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="24dp"
+        android:background="@color/other_background"
+        android:padding="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveToGallery"
+        style="@style/MyTheme.Button.AlternativeNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/save_to_gallery"
+        android:padding="14dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginBottom="65dp"
+        app:icon="@drawable/ic_save"
+        app:iconPadding="16dp"
+        app:iconTint="@null" />
+
+</LinearLayout>

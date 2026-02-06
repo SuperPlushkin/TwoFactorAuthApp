@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- СВЕТЛАЯ ТЕМА -->
+    <!-- Главные цвета Фонов -->
+    <color name="background_primary_hard">#FFFFFF</color>
+    <color name="background_primary_medium">#F5F5F5</color>
+    <color name="background_primary_light">#E0E0E0</color>
+
+    <!-- Вторичные цвета Фонов -->
+    <color name="background_secondary">#E91D1D</color>
+
+    <!-- Другие цвета Фонов -->
+    <color name="other_background">#F2F2F2</color>
+
+    <!-- Текст на главных цветах Фонов -->
+    <color name="text_hard_on_background_primary">#000000</color>
+    <color name="text_medium_on_background_primary">#424242</color>
+    <color name="text_light_on_background_primary">#9E9E9E</color>
+
+    <!-- Текст на вторичных цветах Фонов -->
+    <color name="text_on_secondary">#FFFFFF</color>
+
+    <!-- Границы -->
+    <color name="border">#E0E0E0</color>
+
+    <color name="not_favorite_star_background">#FF757575</color>
+    <color name="favorite_star_background">#FF9800</color>
+
+    <color name="attention_color">#FF0000</color>
+
+    <color name="ripple_color_fab">#FF000000</color>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/background_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:clickable="true"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_primary_hard"
+        android:elevation="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="24dp"
+        android:layout_gravity="start">
+
+        <TextView
+            style="@style/MyTheme.Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            style="@style/MyTheme.Text.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language_section"
+            android:paddingVertical="8dp"
+            tools:ignore="RtlSymmetry" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/languagesContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true">
+
+                <include layout="@layout/language_button" />
+
+                <include layout="@layout/language_button" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </HorizontalScrollView>
+
+        <TextView
+            style="@style/MyTheme.Text.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_section"
+            android:paddingVertical="8dp"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTheme.TextInputLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:endIconMode="dropdown_menu">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/themeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dropdown"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:inputType="none"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/text_hard_on_background_primary"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Гибкое пространство для отталкивания вниз -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Информация о приложении -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingTop="16dp">
+
+            <TextView
+                style="@style/MyTheme.Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/MyTheme.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/version_info"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                style="@style/MyTheme.Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/author_info"
+                android:gravity="center"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schepatemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sort"
+        android:title="@string/main_menu_sort"
+        android:icon="@drawable/ic_trending_up"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_favorites_first"
+        android:title="@string/main_menu_favourites_first"
+        android:checkable="true"
+        android:checked="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_reset_order"
+        android:title="@string/main_menu_reset_order"
+        app:showAsAction="ifRoom" />
+
+</menu>

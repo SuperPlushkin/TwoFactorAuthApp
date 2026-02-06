@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages_name_array">
+        <item>English</item>
+        <item>Russian</item>
+    </string-array>
+
+    <string-array name="language_codes_array">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+
+    <string-array name="themes_name_array">
+        <item>System</item>
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+</resources>

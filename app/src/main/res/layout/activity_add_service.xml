@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_primary_medium">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/MyTheme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Authenticator"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_layout_gradient"
+            android:padding="28dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/MyTheme.Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/service_add_key_title"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/service_add_key_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etServiceName"
+                    style="@style/MyTheme.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/service_add_secret_key">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSecretKey"
+                    style="@style/MyTheme.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/MyTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/service_add_issuer">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIssuer"
+                    style="@style/MyTheme.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/MyTheme.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/expandAdvancedOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_add_additional_options"
+                        style="@style/MyTheme.Text.Subtitle"
+                        android:textStyle="bold"
+                        android:paddingVertical="16dp"
+                        android:paddingHorizontal="16dp"
+                        android:drawablePadding="12dp"
+                        app:drawableStartCompat="@drawable/ic_expand_more"
+                        app:drawableTint="@color/text_medium_on_background_primary"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutAdvancedContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:padding="16dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/MyTheme.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/service_add_account"
+                            android:layout_marginBottom="8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etAccount"
+                                style="@style/MyTheme.TextInputEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:imeOptions="actionNext"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/MyTheme.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/service_add_algorithm"
+                            android:layout_marginBottom="8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etAlgorithm"
+                                style="@style/MyTheme.TextInputEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:imeOptions="actionNext"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/MyTheme.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/service_add_digits"
+                            android:layout_marginBottom="8dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etDigits"
+                                style="@style/MyTheme.TextInputEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:imeOptions="actionDone"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnValidate"
+                style="@style/MyTheme.Button.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/service_add_check_key_button"
+                android:padding="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="8dp"
+                app:icon="@drawable/ic_qr_code_scanner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnScanQR"
+                    style="@style/MyTheme.Button.Normal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/service_add_qr_button"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:padding="14dp"
+                    app:icon="@drawable/ic_qr_code_scanner" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAdd"
+                    style="@style/MyTheme.Button.Normal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/service_add_save_key_button"
+                    android:padding="14dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="16dp"
+                    app:icon="@drawable/ic_add"
+                    app:iconPadding="1dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

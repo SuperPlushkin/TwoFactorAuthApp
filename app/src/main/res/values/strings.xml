@@ -1,0 +1,153 @@
+<resources>
+
+    <string name="app_name">TwoFactorAuthApp</string>
+
+    <string name="no_2fa_keys_yet">Нет Ключей</string>
+    <string name="add_your_first_two_factor_authentication_key_to_get_started">Добавь свой первый ключ для старта</string>
+
+    <string name="_2fa_code_text">2FA Code</string>
+    <string name="more_details_button">Подробнее</string>
+
+    <string name="service_info">Подробная Информация</string>
+    <string name="service_name">Название</string>
+    <string name="service_account">Аккаунт</string>
+    <string name="service_issuer">Сервис</string>
+    <string name="service_added_date">Дата Выдачи</string>
+    <string name="service_usage_count">Кол-во Использований</string>
+    <string name="service_secret_key">Секретный Ключ</string>
+
+    <string name="service_show_button">Показать</string>
+    <string name="service_hide_button">Скрыть</string>
+    <string name="service_qr_button">Показать QR</string>
+    <string name="service_edit_button">Изменить</string>
+    <string name="service_delete_button">Удалить</string>
+
+    <string name="save_to_gallery">Сохранить в Галерее</string>
+
+    <string name="service_add_key_title">Добавить ключ</string>
+    <string name="service_add_key_name">Название</string>
+    <string name="service_add_secret_key">Секретный ключ</string>
+    <string name="service_add_issuer">Сервис</string>
+    <string name="service_add_additional_options">Дополнительные настройки</string>
+    <string name="service_add_account">Почта или Логин (опционально)</string>
+    <string name="service_add_algorithm">Алгоритм генерации (опционально)</string>
+    <string name="service_add_digits">Количество цифр в коде (опционально)</string>
+
+    <string name="service_add_check_key_button">Проверить ключ</string>
+    <string name="service_add_qr_button">QR</string>
+    <string name="service_add_save_key_button">Сохранить ключ</string>
+    <string name="main_menu_sort">Сортировка</string>
+    <string name="main_menu_favourites_first">Избранное вверху</string>
+    <string name="main_menu_reset_order">Сбросить порядок</string>
+    <string name="add_key_hint">Добавить Новый Ключ</string>
+
+    <string name="not_specified">Не назначен</string>
+    <string name="service_used_times">%d раз(а)</string>
+
+    <string name="delete_service_this_action_cannot_be_undone">Удалить %s? Действие не может быть отменено</string>
+    <string name="delete_service">Удалить Сервис</string>
+
+    <string name="copy_failed">✗ Ошибка Копирования</string>
+
+    <string name="added_to_favorites">★ Добавлено в избранное</string>
+    <string name="removed_from_favorites">☆ Убрано из избранного</string>
+
+    <string name="ok_button">OK</string>
+    <string name="soon_button">Скоро</string>
+    <string name="save_button">Сохранить</string>
+    <string name="reset_button">Сбросить</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="exit_button">Выйти</string>
+
+    <string name="unsaved_changes">Несохраненные изменения</string>
+    <string name="u_ve_got_unsaved_changes_are_u_sure_u_want_to_exit">У вас есть несохраненные изменения. Вы уверены, что хотите выйти?</string>
+
+    <string name="enter_service_name">Введите название</string>
+    <string name="enter_secret_key">Введите секретный ключ</string>
+    <string name="enter_secret_key_for_validation">Введите ключ для проверки</string>
+
+    <string name="wrong_key_format">Неверный формат ключа</string>
+    <string name="key_must_be_in_base32_format">Ключ должен быть в формате Base32</string>
+
+    <string name="key_validation">Проверка ключа</string>
+    <string name="key_is_correct_test_code">"✅ Ключ корректный!\n\nТестовый код: "</string>
+
+    <string name="service_successfully_added">Сервис успешно добавлен</string>
+    <string name="service_adding_error">Ошибка при добавлении</string>
+
+    <string name="saved_to_gallery">Сохранено в Галерею</string>
+    <string name="failed_to_save">"Ошибка при сохранении"</string>
+
+    <string name="failed_to_generate_qr_code">Ошибка при генерации QR-кода</string>
+
+    <string name="service_added_successfully">Сервис добавлен успешно!</string>
+    <string name="service_deleted">%s удален</string>
+    <string name="service_restored">Сервис возвращен</string>
+
+    <string name="sort">Сортировка</string>
+    <string name="reset_order">Сброс порядка</string>
+    <string name="sort_order_reseted">Порядок сброшен</string>
+    <string name="reset_custom_sort_order">Сбросить пользовательский порядок сортировки?</string>
+    <string name="switched_to_your_sort_order">Переключено на свой порядок</string>
+
+    <string name="by_default">По умолчанию</string>
+    <string name="alphabetical_a_z">По алфавиту (А-Я)</string>
+    <string name="alphabetical_z_a">По алфавиту (Я-А)</string>
+    <string name="date_added_old_first">Дата добавления (старые)</string>
+    <string name="date_added_new_first">Дата добавления (новые)</string>
+    <string name="custom_order">Свой порядок</string>
+
+
+    <string name="close">Закрыть</string>
+    <string name="scan_qr_code">Сканировать QR-код</string>
+    <string name="qr_scanner_overlay">Область сканирования QR</string>
+    <string name="or_select_from_gallery">Или выберите из галереи</string>
+    <string name="open_gallery">Открыть галерею</string>
+    <string name="restarting_scanner">Перезапуск сканера</string>
+    <string name="select_image">Выберите изображение</string>
+    <string name="storage_permission_required">Требуется разрешение на доступ к хранилищу</string>
+    <string name="no_qr_in_image">QR-код не найден в изображении</string>
+    <string name="failed_to_decode_qr">Не удалось декодировать QR-код</string>
+    <string name="error_processing_image">Ошибка обработки изображения</string>
+    <string name="qr_scanned_success">QR-код распознан!</string>
+    <string name="scan_qr_prompt">Наведите камеру на QR-код для сканирования</string>
+    <string name="camera_permission_required">Требуется разрешение на исп. камеры</string>
+    <string name="invalid_qr_format">Неверный формат QR-кода</string>
+
+    <string name="replace_data">Заменить данные?</string>
+    <string name="replace_existing_data_with_qr">Заполненные поля будут заменены данными из QR-кода. Продолжить?</string>
+    <string name="replace_button">Заменить</string>
+    <string name="failed_to_parse_qr">Не удалось распознать QR-код</string>
+    <string name="qr_data_loaded">Данные из QR-кода загружены</string>
+    <string name="camera_failed">Ошибка использования камеры</string>
+    <string name="chosen_not_image">Выбрана не фотография</string>
+    <string name="failed_to_load_image">Ошибка при загрузке изображения\n</string>
+    <string name="issuer_required">Название сервиса должно быть заполнено</string>
+    <string name="scan_cooldown">Повторный поиск QR-кода...</string>
+    <string name="invalid_algorithm">Алгоритм должен быть SHA1, SHA256 или SHA512</string>
+    <string name="digits_must_be_between_4_and_10">Количество цифр должно быть от 4 до 10</string>
+    <string name="invalid_digits_format">Неверный формат цифр</string>
+    <string name="service_algorithm">Алгоритм</string>
+    <string name="service_digits">Цифры</string>
+    <string name="no_gallery_app">Нет приложения для выбора изображений</string>
+
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings">Настройки</string>
+    <string name="language_section">Язык</string>
+    <string name="russian_language">Русский</string>
+    <string name="english_language">English</string>
+    <string name="theme_section">Тема</string>
+    <string name="system_theme">Системная</string>
+    <string name="dark_theme">Тёмная</string>
+    <string name="light_theme">Светлая</string>
+    <string name="apply_settings">Применить</string>
+    <string name="version_info">Версия 1.0.0</string>
+    <string name="author_info">Автор: SuperPlushkin</string>
+    <string name="settings_applied">Настройки применены</string>
+    <string name="settings_restart_required">Требуется перезапуск приложения</string>
+    <string name="later_button">Позже</string>
+    <string name="settings_restart_message">Перезапустите приложение для применения настроек</string>
+    <string name="select_theme_hint">выберите тему\n</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emptyStateView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_key"
+        android:layout_marginBottom="24dp"
+        app:tint="@color/text_light_on_background_primary"/>
+
+    <TextView
+        style="@style/MyTheme.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_2fa_keys_yet"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        style="@style/MyTheme.Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_your_first_two_factor_authentication_key_to_get_started"
+        android:textColor="@color/text_light_on_background_primary"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>
