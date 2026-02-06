@@ -16,7 +16,6 @@ import androidx.fragment.app.FragmentActivity;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
-import com.r0adkll.slidr.model.SlidrInterface;
 
 import ru.superplushkin.twofactorauthapp.R;
 import ru.superplushkin.twofactorauthapp.subclasses.LocaleHelper;
@@ -31,7 +30,6 @@ public class LeftSlideDialogFragment extends DialogFragment {
     private String[] themeCodesArray;
 
     private OnSettingsAppliedListener listener;
-    private SlidrInterface slidrInterface;
 
     private String previousLanguage;
     private String previousTheme;
@@ -160,19 +158,6 @@ public class LeftSlideDialogFragment extends DialogFragment {
             if (!previousTheme.equals(newTheme))
                 showRestartConfirmationDialogTheme(newTheme);
         });
-    }
-    private void setupSwipeToGoBack() {
-//        slidrInterface = Slidr.attach(this, SlidrConfigHelper.createRightEdgeConfig(new SlidrListener() {
-//            @Override
-//            public boolean onSlideClosed() {
-//                dismiss();
-//                return true;
-//            }
-//            @Override public void onSlideStateChanged(int state) {}
-//            @Override public void onSlideChange(float percent) {}
-//            @Override public void onSlideOpened() {}
-//        }));
-//        slidrInterface.unlock();
     }
 
     private void showRestartConfirmationDialogLocale(String newValue) {
